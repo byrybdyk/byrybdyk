@@ -1,0 +1,43 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class Object
+
+interface getName
+interface getPlanet
+
+
+Action <|-- Object
+Forest <|-- Object
+IA <|-- Object
+
+Pyatochok <|-- Object
+Pooh <|-- Object
+Robin <|-- Object
+PlanetEnum <|-- Planet
+Planet <|-- Object
+Object <|-- getName
+Object <|-- getPlanet
+Story <|-- Action
+Story <|-- Forest
+Story <|-- IA
+Pyatochok <|-- layException
+Story <|-- Pyatochok
+Story <|-- Pooh
+Story <|-- Robin
+Story <|-- Planet
+class Story
+class Action
+class Forest
+class IA
+class layException
+class Planet
+class Pooh
+class Pyatochok
+class Robin
+enum PlanetEnum {
+
+}
+
+
+@enduml
